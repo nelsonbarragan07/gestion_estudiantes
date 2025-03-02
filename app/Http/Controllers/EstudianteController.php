@@ -29,7 +29,7 @@ class EstudianteController extends Controller
      */
     public function store(Request $request)
     {
-        Estudiante::created($request->all());
+        Estudiante::create($request->all());
         return redirect()->route('estudiantes.index');
     }
 
